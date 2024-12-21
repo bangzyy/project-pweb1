@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORM PEMESANAN</title>
+  <link rel="stylesheet" href="./css/form-pemesanan.css" />
+  <script src="/libs/JS/form-pemesanan.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Form Pemesanan</h1>
+    <form onsubmit="return calculateTotal()">
+      <table>
+        <tr>
+          <td><label for="pesan">Id Pemesanan:</label></td>
+          <td><input type="number" id="pesan" name="pesan" min="1" required /></td>
+        </tr>
+        <tr>
+          <td><label for="name">Nama Pemesan:</label></td>
+          <td><input type="text" id="name" name="nama" required /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Jenis Kelamin:</label></td>
+          <td>
+            <select id="gender" name="gender" required>
+              <option value="">--Pilih--</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="idn">Nomor Identitas:</label></td>
+          <td><input type="text" id="idn" name="idn" required /></td>
+        </tr>
+        <tr>
+          <td><label>Tipe Kamar</label></td>
+          <td>
+            <select id="tipekamar" name="tipekamar" required onchange="setRoomPrice()">
+              <option value="" selected>--PILIH--</option>
+              <option value="Standard">Standard</option>
+              <option value="Deluxe">Deluxe</option>
+              <option value="Family">Family</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Harga:</label></td>
+          <td><input type="number" id="price" name="price" readonly required /></td>
+        </tr>
+        <tr>
+          <td><label>Tanggal Pesan</label></td>
+          <td><input type="date" id="tgl_psn" name="tgl_psn" required /></td>
+        </tr>
+        <tr>
+          <td><label>Durasi Menginap</label></td>
+          <td><input type="number" id="durasi" name="durasi" required /></td>
+        </tr>
+        <tr>
+          <td><label>Termasuk Breakfast:</label></td>
+          <td>
+            <input type="checkbox" id="breakfast" name="breakfast" />
+            <label>Ya</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Total Bayar:</label></td>
+          <td><input type="text" id="tprice" name="tprice" readonly required /></td>
+        </tr>
+      </table>
+      <div class="tombol">
+        <button type="submit" class="save">SIMPAN</button>
+        <button type="reset" class="cancel">BATAL</button>
+      </div>
+    </form>
+  </div>
+
+  </body>
+</html>

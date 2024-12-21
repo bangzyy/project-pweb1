@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px 40px; /* Kurangi padding agar tidak terlalu tinggi */
+    box-shadow: 5px 8px 16px lightblue;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1000px; /* Lebar lebih besar */
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 10px;
+}
+
+td {
+    padding: 10px 12px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+select {
+    max-width: 200px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.tombol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+button {
+    width: 18%;
+    padding: 12px;
+    margin: 10px 1%;
+    background-color: #1a39a0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button.cancel {
+    background-color: yellow;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: rotate(4deg);
+}
+
+button.cancel:hover {
+    background-color: #e53935;
+    transform: rotate(4deg);
+}
+
+.cb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

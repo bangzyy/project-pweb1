@@ -1,0 +1,9 @@
+.img-fluid {
+    object-fit: cover;  /* Menjaga proporsi gambar tanpa terdistorsi */
+    height: 200px;  /* Membuat gambar memiliki tinggi yang sama */
+    width: 100%;  /* Membuat gambar mengisi kolom secara proporsional */
+  }
+  body {
+  background-color: #343a40; /* Warna abu-abu gelap (atau #000000 untuk hitam) */
+  color: white; /* Menyesuaikan warna teks agar terlihat dengan background gelap */
+}

@@ -1,0 +1,16 @@
+body{
+    background-color: #343a40;
+    color: white;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-body {
+  flex-grow: 1; /* Membuat body card untuk mengisi sisa ruang */
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /* Ukuran gambar seragam */
+}

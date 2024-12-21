@@ -1,0 +1,37 @@
+    body {
+        background-color: #343a40; /* Warna abu-abu gelap */
+        color: white; /* Menyesuaikan warna teks agar terlihat dengan background gelap */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Memastikan body memenuhi tinggi layar */
+      }
+      
+      .container {
+        flex: 1; /* Membuat kontainer utama tumbuh untuk mengisi ruang yang tersisa */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column; /* Menyusun konten di dalam container secara vertikal */
+      }
+      
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .card {
+        margin: 10px;
+        flex: 1; /* Membuat card tumbuh agar memiliki ukuran yang sama */
+        max-width: 300px; /* Setel ukuran maksimum lebar card */
+        min-height: 400px; /* Setel tinggi minimal untuk memastikan card cukup besar */
+        display: flex;
+        flex-direction: column;
+      }
+      
+      footer {
+        background-color: #343a40; /* Warna footer */
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+      }
