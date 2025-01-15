@@ -9,48 +9,35 @@
         function login(){
             const cekUsername = "admin"
             const cekPassword ="123"
-             const username = document.getElementById("username").value
-             const password = document.getElementById("password").value
-             if(username == cekUsername && password == cekPassword){
-                alert("Anda Berhasil Login Sebagai " +cekUsername)
-                window.location.href = "form-tambahData.html"
-             }else if(username == "" && password == ""){
+            const username = document.getElementById("username").value
+            const password = document.getElementById("password").value
+            if(username == cekUsername && password == cekPassword){
+                alert("Anda Berhasil Login Sebagai " + cekUsername)
+                window.location.href = "Dashboard.html"
+            }else if(username == "" && password == ""){
                 alert("Username Atau Password Tidak Boleh Kosong")
                 window.location.href = "admin-login.html"
-             }else{
-                 alert("Username Atau Password Salah")
+            }else{
+                alert("Username Atau Password Salah")
                 window.location.href = "admin-login.html"
-             }
+            }
         }
     </script>
 </head>
 <body>
-    <h1>FORM LOGIN ADMIN</h1>
-    <form id="login">
-        <table border="0">
-            <tr>
-                <td>
-                    <label>Username:</label>
-                </td>
-                <td>
-                    <input type="text" id="username" name="username">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Password:</label>
-                </td>
-                <td>
-                    <input type="password" id="password" name="password">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="button" onclick="login()">LOGIN</button>
-                </td>
-            </tr> 
-        </table>
-      
-    </form>
+    <div class="login-container">
+        <h1>Form Login Admin</h1>
+        <form id="login">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
 </body>
 </html>
